@@ -26,6 +26,25 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
+                    <a-obj-model
+          src="assets/heart.obj"
+          mtl="assets/heart.mtl"
+          scale="0.1 0.1 0.1"
+          position="0 0 0">
+          <a-animation attribute="rotation" begin="click" dur="500" fill="backwards" to="30 30 360"></a-animation>
+        </a-obj-model>
+            <!--バックアップ-->
+            </a-marker>
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/nana.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
                 <a-image
                     src="assets/asset.png"
                     scale="1 1 1"
